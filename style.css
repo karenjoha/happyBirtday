@@ -46,6 +46,9 @@
     display: grid;
     position: absolute;
     place-items: center;
+    @media (max-width: 768px) {
+      top: 10rem;
+    }
   }
   .container > .envelope-wrapper {
     background: var(--bg-envelope-color);
@@ -109,7 +112,13 @@
     transition: transform 0.5s ease-in-out 1s;
     box-shadow: 0 1px 6px var(--shadow-color);
     cursor: pointer;
+    
+    @media (max-width: 768px) {
+      top: 52%;
+      left: 80%;
+    }
   }
+  
   .heart:before, 
   .heart:after {
     content: "";
@@ -170,7 +179,6 @@
   .track-info{
     position: absolute;
     top: 0;
-    left: -.3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,6 +192,8 @@
     font-size: 1.5rem;
     font-weight: bold;
     pointer-events: none;
+    width: 50%;
+    text-align: center;
   }
   .trackartist{
     font-size: .8rem;
